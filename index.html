@@ -11,16 +11,88 @@
         <!-- daisyui and tailwindcss -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             .manrope-normal{
                 font-family: "Manrope", sans-serif;
             }
         </style>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'color-primary': '#ABEF5F',
+                  }
+                }
+              }
+            }
+          </script>
 </head>
-<body class="manrope-normal">
+<body class="manrope-normal border border-4">
     <!-- header section -->
-    <header>
-        <h1>Hello I am Manrope</h1>
+    <header class=" w-11/12 mx-auto">
+        <!-- nav section -->
+        <nav class=" mx-auto">
+            <div class="navbar justify-between">
+                <div>
+                  <a class=" text-3xl font-[800] text-3xl"><i class="fa-solid fa-arrow-right bg-color-primary p-1 rounded-full -rotate-45"></i>Rinterio</a>
+                </div>
+                <div class=" hidden md:block lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-[800]">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="hidden md:block">
+                  <button class=" btn bg-color-primary text-5 text-[#1C1C1C] font-[800] py-3 px-5 ">Book Consult<i class="fa-solid fa-arrow-right bg-black text-white p-1 rounded-full -rotate-45"></i></button>
+                </div>
+                <i class="fa-solid fa-bars md:hidden"></i>
+            </div>
+            <!-- <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                      </div>
+                    <ul
+                      tabindex="0"
+                      class=" menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+              </div> -->
+                <!-- banner section  -->
+        <div class="hero">
+          <div class="text-center ">
+              <div>
+                  <img class=" w-full md:px-24" src="./assets/banner.png" alt="">
+              </div>
+            <div>
+              <h1 class="text-2xl md:text-6xl text-[#212121] px-4 md:px-16 font-[800]">A barn house of this design has a striking appearance</h1>
+              <p class="py-6 md:px-24 font-[500] ">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+              </p>
+              <button class="btn bg-color-primary">View Details</button>
+            </div>
+          </div>
+        </div>
+        </nav>
     </header>
     <!-- main section  -->
     <main>

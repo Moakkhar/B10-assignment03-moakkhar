@@ -24,6 +24,7 @@
                   colors: {
                     clifford: '#da373d',
                     'color-primary': '#ABEF5F',
+                    
                   }
                 }
               }
@@ -34,12 +35,12 @@
     <!-- header section -->
     <header class=" w-11/12 mx-auto">
         <!-- nav section -->
-        <nav class=" mx-auto">
-            <div class="navbar justify-between">
+        <nav class=" md:px-6 mx-auto bg-gradient-to-b from-orange-50 ">
+            <div class="navbar justify-between pt-4">
                 <div>
-                  <a class=" text-3xl font-[800] text-3xl"><i class="fa-solid fa-arrow-right bg-color-primary p-1 rounded-full -rotate-45"></i>Rinterio</a>
+                  <a class=" text-3xl font-[800]"><i class="fa-solid fa-arrow-right bg-color-primary p-1 rounded-full -rotate-45"></i>Rinterio</a>
                 </div>
-                <div class=" hidden md:block lg:flex">
+                <div class=" hidden lg:block lg:flex">
                   <ul class="menu menu-horizontal px-1">
                     <li><a class="font-[800]">Home</a></li>
                     <li><a>Services</a></li>
@@ -48,47 +49,25 @@
                   </ul>
                 </div>
                 <div class="hidden md:block">
+                  <i class="fa-solid fa-magnifying-glass mr-6 p-2 bg-white rounded-full"></i>
+                  <i class="fa-solid fa-cart-shopping mr-6 p-2 bg-white rounded-full"></i>
                   <button class=" btn bg-color-primary text-5 text-[#1C1C1C] font-[800] py-3 px-5 ">Book Consult<i class="fa-solid fa-arrow-right bg-black text-white p-1 rounded-full -rotate-45"></i></button>
                 </div>
-                <i class="fa-solid fa-bars md:hidden"></i>
+                <i class="fa-solid fa-bars lg:hidden"></i>
             </div>
-            <!-- <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                      </div>
-                    <ul
-                      tabindex="0"
-                      class=" menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Home</a></li>
-                      <li><a>Services</a></li>
-                      <li><a>Blogs</a></li>
-                      <li><a>Contact Us</a></li>
-                    </ul>
-                  </div>
-              </div> -->
+            
                 <!-- banner section  -->
         <div class="hero">
           <div class="text-center ">
-              <div>
-                  <img class=" w-full md:px-24" src="./assets/banner.png" alt="">
+              <div class="flex justify-center">
+                  <img class="pt-4 pb-4 md:pt-8" src="./assets/banner.png" alt="">
               </div>
-            <div>
+            <div class="md:mx-28">
               <h1 class="text-2xl md:text-6xl text-[#212121] px-4 md:px-16 font-[800]">A barn house of this design has a striking appearance</h1>
               <p class="py-6 md:px-24 font-[500] ">
                   The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
               </p>
-              <button class="btn bg-color-primary">View Details</button>
+              <button class="btn bg-color-primary py-3 px-6">View Details<i class="fa-solid fa-arrow-right bg-color-primary p-1 rounded-full -rotate-45"></i></button>
             </div>
           </div>
         </div>
